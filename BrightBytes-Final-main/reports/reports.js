@@ -4,7 +4,8 @@ var manufacturerFilterDiv = document.getElementById('manufacturerFilter');
 var customerDiv = document.getElementById('customer_report');
 var warrantyDiv = document.getElementById('warranty_report');
 var orderDiv = document.getElementById('order_report');
-var dateDiv = document.getElementById('dates');
+var dateDiv = document.getElementById('dateTo');
+var dateFromDiv = document.getElementById('dateFrom');
 var btnGenerate = document.getElementById('btn_generate');
 
 var reportSelect = document.getElementById('reportTypes');
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
   warrantyDiv.style.display = 'none';
   orderDiv.style.display = 'none';
   dateDiv.style.display = 'none';
+  dateFromDiv.style.display = 'none';
   btnGenerate.style.display = 'none';
 
   reportSelect.addEventListener('change', function () {
@@ -48,6 +50,7 @@ function handleReportChange(selectedReport) {
       // Logic for Customer Report
       orderFilterDiv.style.display = 'none';
       dateDiv.style.display = 'none';
+      dateFromDiv.style.display = 'none';
       btnGenerate.style.display = 'none';
       manufacturerFilterDiv.style.display = 'none';
       reportTitle.textContent = 'Choose a report';
@@ -56,6 +59,7 @@ function handleReportChange(selectedReport) {
       // Logic for Customer Report
       orderFilterDiv.style.display = 'flex';
       dateDiv.style.display = 'flex';
+      dateFromDiv.style.display = 'flex';
       btnGenerate.style.display = 'flex';
       manufacturerFilterDiv.style.display = 'none';
       reportTitle.textContent = 'Customer Report';
@@ -65,6 +69,7 @@ function handleReportChange(selectedReport) {
       orderFilterDiv.style.display = 'none';
       manufacturerFilterDiv.style.display = 'flex';
       dateDiv.style.display = 'flex';
+      dateFromDiv.style.display = 'flex';
       btnGenerate.style.display = 'flex';
       reportTitle.textContent = 'Warranty Report';
       break;
@@ -73,6 +78,7 @@ function handleReportChange(selectedReport) {
       orderFilterDiv.style.display = 'flex';
       manufacturerFilterDiv.style.display = 'none';
       dateDiv.style.display = 'flex';
+      dateFromDiv.style.display = 'flex';
       btnGenerate.style.display = 'flex';
       reportTitle.textContent = 'Order Report';
       break;
@@ -100,14 +106,3 @@ function handleReportGeneration(selectedReport) {
       break;
   }
 }
-
-$(function () {
-  $('input[name="datetimes"]').daterangepicker({
-    timePicker: true,
-    startDate: moment('2023-01-01'), 
-    endDate: moment(),
-    locale: {
-      format: 'DD/MM/YYYY'
-    }
-  });
-});
