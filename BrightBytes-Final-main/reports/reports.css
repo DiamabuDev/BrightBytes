@@ -30,6 +30,7 @@ h2 {
 
 main {
     color: white;
+    margin-left: -50px;
 }
 
 main img {
@@ -40,8 +41,6 @@ main img {
 a {
     color: aliceblue;
 }
-
-
 
 .btn {
     height: 40px;
