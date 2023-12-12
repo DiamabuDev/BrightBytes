@@ -113,3 +113,15 @@ select {
     display: flex;
     flex-direction: column;
 }
+
+#rowcount {
+    margin-left: 264px;
+    font-weight: bold;
+}
+
+#customer_report,
+#warranty_report,
+#order_report {
+    display: flex;
+    flex-direction: column;
+}
