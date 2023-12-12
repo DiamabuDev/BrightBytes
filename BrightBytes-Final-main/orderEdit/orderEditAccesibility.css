@@ -1,0 +1,41 @@
+.tooltip-inline {
+    display: grid;
+    grid-template-columns: 3fr 1fr;    
+    margin-right: -190px;
+}
+
+.tooltip-icon {
+    margin-left: 0px;
+}
+
+/*CSS for hint*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+  }
+  
+  .tooltiptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    left: 160%;
+    margin-left: -80px; /* Center the tooltip horizontally */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.accesibilty {
+    margin-top: 80px;
+}

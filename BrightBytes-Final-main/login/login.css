@@ -1,0 +1,96 @@
+input{height: 30px;     
+    width: 100px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;    
+    font-size: 16px;
+    margin-top: 10px;
+}
+.content {
+    
+    align-items: center;
+    justify-content: center;
+}
+    #role{
+        width: 10%;
+      }
+      #roleLbl{
+        margin-left: 60px;
+        margin-top: 168px;
+        color: #fff;
+      }
+      .order-table tbody tr:hover {
+        background-color: #f2f2f2; 
+        cursor: pointer;
+      }
+      #sales2{
+        width: 700px;
+        height: 300px;
+      }
+      #loginInputs input:focus + label,
+      #loginInputs input:valid + label {
+        transform: translateY(-2.2em) scale(1.5);
+        color: white;
+      }
+      #signIn{
+        background-color: #FAD85D;
+        width: 10%;
+        height: 40px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+      }
+      
+      #signIn:hover {
+        background-color: grey; 
+        cursor: pointer;
+      }
+      #loginInputs input{
+        width: 20%;
+      }
+      #first{
+        margin-left: -10px;
+      }
+      #IdLogin{
+        width: 50%;
+        margin-top: 10px;
+      }
+      #IdPassword{
+        width: 50%;
+        margin-top: 50px;
+      }
+      #loginInputs{
+        margin-top:100px;
+      }
+.roleD{
+    margin-right: 100px;
+    margin-top: 50px;
+}
+select{
+    border-radius: 5px;
+    height: 37px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+h1{
+    color: black;
+}
+button{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border-radius: 7px;
+}
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block; /* Ensure labels are displayed as blocks */
+    font-size: 16px; /* Adjust font size as needed */
+    margin-right: 200px;
+}
+
+
+
+

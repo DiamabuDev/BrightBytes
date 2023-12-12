@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../addEquipOption/addEquipOption.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <title>Equipment</title>
+</head>
+<body>
+    <header>
+        <h1>Equipment</h1>
+    </header>
+    <nav class="sidebar" id="mySidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        <a href="../index.html" tabindex="1">Home</a>
+        <a href="../orders.html" tabindex="2">Orders</a>
+        <a href="../customers/customers.html" tabindex="3">Customers</a>
+        <a href="../repairs/repairs.html" tabindex="4">Repairs</a>
+        <a href="../reports/reports.html" tabindex="5">Reports</a>
+        <div class="sideButtons">
+            <button>Orders</button>
+            <button>Customers</button>
+            <button>Repairs</button>
+        </div>
+    </nav>
+    <main>
+        <h2>Select an Option</h2>
+        <div class="btn-container">
+            <button tabindex="5" class="btn-option" onclick="ToCustomerList()">Go Back To<br>Customer List</button>
+            <button tabindex="7" class="btn-option" onclick="ToAddEquipment()">Continue To<br>Add Equipment</button>
+        </div>
+    </main>
+    <script src="../global.js"></script>
+    <script src="../sidebar.js"></script>
+</body>
+</html>

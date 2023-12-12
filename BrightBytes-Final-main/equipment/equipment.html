@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../equipment/equipment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <title>New Equipment</title>
+</head>
+
+<body>
+    <header>
+        <h1>Equipment</h1>
+    </header>
+    <nav class="sidebar" id="mySidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        <a href="../index.html">Home</a>
+        <a href="../orders.html">Orders</a>
+        <a href="../customers/customers.html">Customers</a>
+        <a href="../repairs/repairs.html">Repairs</a>
+        <a href="../reports/reports.html" tabindex="5">Reports</a>
+        <div class="sideButtons">
+            <button>Orders</button>
+            <button>Customers</button>
+            <button>Inventory</button>
+            <button>Sales</button>
+        </div>
+    </nav>
+    <main>
+        <div class="img-container">
+            <img src="../img/progress-bar-create-newequipment.png" alt="Progress Bar One">
+        </div>
+        <h2>New Equipment</h2>
+        <div class="form-container">
+            <form id="myForm">                
+                <div class="input-container">
+                    <input type="text" id="txtEquipName" placeholder=" ">
+                    <label for="txtEquipName">Equipment Name</label>
+                    <span id="errorTxtEquipName" class="error-message">! Please enter the Equipment Name</span>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="txtEquipModel" placeholder=" ">
+                    <label for="txtEquipModel">Equipment Model</label>
+                    <span id="errorTxtEquipModel" class="error-message">! Please enter the Equipment Model</span>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="txtVIN" placeholder=" ">
+                    <label for="txtVIN">VIN</label>
+                    <span id="errorTxtVIN" class="error-message">! Please enter the VIN</span>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="txtManufacturer" placeholder=" ">
+                    <label for="txtManufacturer">Manufacturer</label>
+                    <span id="errorTxtManufacturer" class="error-message">! Please enter the Manufacturer</span>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="txtColor" placeholder=" ">
+                    <label for="txtColor">Main Color</label>
+                    <span id="errorTxtColor" class="error-message">! Please enter the Main Color</span>
+                </div>                
+                <div>
+                    <select id="warranty">
+                        <option value="Select" selected>Has Warranty?</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>              
+                    <span id="errorWarranty" class="error-message">! Please select the warranty</span>
+                </div>                    
+                <div class="input-container">
+                    <input type="text" id="txtNotes" placeholder=" ">
+                    <label for="txtNotes">Notes</label>                    
+                </div>
+                <div class="btn-container">
+                    <button id="btn-save" type="submit">Save</button>
+                </div>               
+            </form>
+        </div>
+        <div class="bottom-images">
+            <div class="bottom-btn">
+                <img src="../img/yellow-back-button.png" alt="Back Button" class="bottom-image" id="back-image"
+                    onclick="goBack()">
+                <img src="../img/yellow-next-button.png" alt="Next Button" class="bottom-image" id="next-image"
+                    onclick="ToOrder()">
+            </div>
+        </div>
+    </main>
+    <script src="../global.js"></script>
+    <script src="equipment.js"></script>
+    <script src="../sidebar.js"></script>
+</body>
+
+</html>

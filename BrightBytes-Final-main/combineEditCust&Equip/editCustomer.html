@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="editCustomer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <title>Details</title>
+</head>
+
+<body>
+    <header>
+        <h1>Details</h1>
+    </header>
+    <nav class="sidebar" id="mySidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        <a href="../index.html">Home</a>
+        <a href="../orders.html">Orders</a>
+        <a href="../customers/customers.html" tabindex="3">Customers</a>
+        <a href="../repairs/repairs.html" tabindex="4">Repairs</a>
+        <a href="../reports/reports.html" tabindex="5">Reports</a>
+        <div class="sideButtons">
+            <button>Orders</button>
+            <button>Customers</button>
+            <button>Inventory</button>
+            <button>Sales</button>
+        </div>
+    </nav>
+    <main><br>
+        <div class=" form-container">
+            <h2 id="editCustH">Edit Customer</h2>
+            <input type="radio" id="editCustomerRadio" name="editType"
+                onclick="toggleForm('editCustomerForm', this.checked)" checked>
+            <form id="editCustomerForm" method="post" action="https:://webdevbasic.net/scripts/demo.php">
+                <div class="order-inputs">
+                    <div class="form-rows">
+                        <div class="form-group">
+                            <input id='customerName' type="text" id="firstName" value='Freddie' required>
+                            <label for="customerName" id="first">First Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="lastName" value='Mercury' required>
+                            <label for="lastName" id="last">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="form-rows">
+                        <div class="form-group">
+                            <input id="telephone" name="telephone" type="text" value="(234) 567-8960" required
+                                type="tel">
+                            <label for="telephone" id="telephoneLbl">Telephone</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="email" value="fredqueen@gmail.com" required>
+                            <label for="email" id="emailLbl">Email</label>
+                        </div>
+                    </div>
+                    <div class="form-rows">
+                        <div class="form-group">
+                            <input type="text" id="address" value="322 Street" required>
+                            <label for="address" id="addressLbl">Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input id="postal" name="postal" type="text" value="L2H 1S2" required>
+                            <label for="postal" id="postalLbl">Postal </label>
+                        </div>
+                    </div>
+                    <div class="form-rows">
+                        <select id="cities" name="cities">
+                            <option value="Toronto">Toronto</option>
+                            <option value="Vancouver">Vancouver</option>
+                            <option value="Montreal">Montreal</option>
+                            <option value="Calgary">Calgary</option>
+                            <option value="Ottawa">Ottawa</option>
+                            <option value="Edmonton">Edmonton</option>
+                            <option value="Quebec">Quebec City</option>
+                            <option value="Winnipeg">Winnipeg</option>
+                            <option value="Halifax">Halifax</option>
+                            <option value="Victoria">Victoria</option>
+                            <option value="Regina">Regina</option>
+                            <option value="Saskatoon">Saskatoon</option>
+                            <option value="Kitchener">Kitchener</option>
+                            <option value="London">London</option>
+                            <option value="Hamilton">Hamilton</option>
+                            <option value="Stjohns">St. John's</option>
+                            <option value="moncton">Moncton</option>
+                            <option value="Windsor">Windsor</option>
+                            <option value="Sherbrooke">Sherbrooke</option>
+                            <option value="Kingston">Kingston</option>
+                        </select>
+                    </div>
+                    <select id="province">
+                        <option value="Ontario">Ontario</option>
+                        <option value="Select">Select Province</option>
+                        <option value="Alberta">Alberta</option>
+                        <option value="British Columbia">British Columbia</option>
+                        <option value="Manitoba">Manitoba</option>
+                        <option value="New Brunswick">New Brunswick</option>
+                        <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                        <option value="Nova Scotia">Nova Scotia</option>
+                        <option value="Ontario">Ontario</option>
+                        <option value="Prince Edward Island">Prince Edward Island</option>
+                        <option value="Quebec">Quebec</option>
+                        <option value="Saskatchewan">Saskatchewan</option>
+                    </select>
+
+
+                </div>
+            </form>
+            <div id="btn-container">
+                <button tabindex="13" id="btn-save" type="submit" onclick="ToEquipOption()">Save</button>
+            </div>
+            <div id="bottom-images">
+                <img src="../img/yellow-back-button.png" alt="Back Button" class="bottom-image" id="back-image"
+                    onclick="goBack()">
+            </div>
+        </div>
+        <div class="form-container">
+            <h2 id="editCustH">Edit Equipment</h2>
+            <input type="radio" id="editEquipmentRadio" name="editType"
+                onclick="toggleForm('editEquipmentForm', this.checked)">
+            <div id="edit-options">
+                <div class="radio-group">
+                    <input type="radio" id="radioOption1" name="equipmentOptions">
+                    <label for="radioOption1"></label>
+
+                    <input type="radio" id="radioOption2" name="equipmentOptions">
+                    <label for="radioOption2"></label>
+
+                    <input type="radio" id="radioOption3" name="equipmentOptions">
+                    <label for="radioOption3"></label>
+                </div>
+                <div class="vertical-words">
+                    <span>The kick Pro | Lawn Mower | VIN: 1999999</span>
+                    <span>Grass Slaughter Focus | Rotary Mower | VIN: 1939992 </span>
+                    <span>E-EARTH PlusB | Manual Powered Mower | VIN: 1932912</span>
+                </div>
+            </div>
+            <button id="editButton" onclick='ToEditEquipment()' disabled>Edit</button>
+        </div>
+    </main>
+    <script src="../global.js"></script>
+    <script src="../sidebar.js"></script>
+</body>
+
+</html>

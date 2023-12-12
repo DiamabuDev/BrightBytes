@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../recurringEquipNoBar/recurringEquipNoBar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <title>Equipment</title>
+</head>
+
+<body>
+    <header>
+        <h1>Equipment</h1>
+    </header>
+    <nav class="sidebar" id="mySidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        <a href="../index.html" tabindex="1">Home</a>
+        <a href="../orders.html" tabindex="2">Orders</a>
+        <a href="../customers/customers.html" tabindex="3">Customers</a>
+        <a href="../repairs/repairs.html" tabindex="4">Repairs</a>
+        <a href="../reports/reports.html" tabindex="5">Reports</a>
+        <div class="sideButtons">
+            <button>Orders</button>
+            <button>Customers</button>
+            <button>Inventory</button>
+            <button>Sales</button>
+        </div>
+    </nav>
+    <main>
+        <div class="btn-container">
+            <button tabindex="5" class="btn-new-equipment" onclick="ToAddEquipment()">New Equipment</button>
+        </div>
+        <div class="data-container">
+            <div class="data-inputs">
+                <input tabindex="6" type="text" placeholder="Search by Name" id="nameFilter">
+                <select id="statusFilter">
+                    <option value="" disabled selected>Manufacturer</option>
+                    <option value="">Any</option>
+                    <option value="Joey Mama Enterprise">Joey Mama Enterprise</option>
+                    <option value="Live Corp.">Live Corp.</option>
+                    <option value="The Green Industries">The Green Industries</option>
+                    <option value="Monsters Inc.">Monsters Inc.</option>
+                    <option value="Gamma Gia Co.">Gamma Gia Co.</option>
+                    <option value="Wall-E Inc.">Wall-E Inc.</option>
+                </select>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Model</th>
+                            <th>Type</th>
+                            <th>Manufacturer</th>
+                            <th>Color</th>
+                            <th>Warranty</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr tabindex="7">
+                            <td>The Kick</td>
+                            <td>Pro</td>
+                            <td>Lawn Mower</td>
+                            <td>Joey Mama Enterprise</td>
+                            <td>Teal</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr tabindex="8">
+                            <td>Mow yo Lawn</td>
+                            <td>ExtraX</td>
+                            <td>Manual Powered Mower</td>
+                            <td>Live Corp.</td>
+                            <td>Grey</td>
+                            <td>No</td>
+                        </tr>
+                        <tr tabindex="9">
+                            <td>Grass Slaughter</td>
+                            <td>Focus</td>
+                            <td>Rotary Mower</td>
+                            <td>The Green Industries</td>
+                            <td>Black</td>
+                            <td>No</td>
+                        </tr>
+                        <tr tabindex="10">
+                            <td>Weed Slayer</td>
+                            <td>Slay</td>
+                            <td>Hower Mower</td>
+                            <td>Monsters Inc.</td>
+                            <td>Rose</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr tabindex="11">
+                            <td>Weed Slayer</td>
+                            <td>13th Gen</td>
+                            <td>Hower Mover</td>
+                            <td>Monsters Inc.</td>
+                            <td>Lilac</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr tabindex="12">
+                            <td>Garden Queen</td>
+                            <td>Ultimate</td>
+                            <td>Lawn Mower</td>
+                            <td>Gamma Gia Co.</td>
+                            <td>Yellow</td>
+                            <td>No</td>
+                        </tr>
+                        <tr tabindex="13">
+                            <td>E-ARTH</td>
+                            <td>PlusB</td>
+                            <td>Manual Powered Mower</td>
+                            <td>Wall-E Inc.</td>
+                            <td>Navy Blue</td>
+                            <td>No</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="paging">
+                <img tabindex="13" src="../img/paging.png" alt="Paging">
+            </div>
+            <div id="img-btn-container">
+                <img tabindex="14" src="../img/back-button.png" alt="Back Button" onclick="goBack()">
+            </div>    
+    </main>
+    <script src="../recurringEquipNoBar/recurringEquipNoBar.js"></script>
+    <script src="../global.js"></script>  
+    <script src="../sidebar.js"></script>  
+</body>
+</html>

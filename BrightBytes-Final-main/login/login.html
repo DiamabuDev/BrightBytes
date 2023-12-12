@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="../login/login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <title>Login</title>
+</head>
+
+<body>
+
+  <div class="sidebar" id="mySidebar">
+    <a href="../login/login.html">Login</a>
+
+    <div class="sideButtons">
+      <button onclick="redirectHome()">Home</button>
+      <button onclick="redirectToOrders()">Orders</button>
+      <button onclick="redirectToCust()">Customers</button>
+      <button onclick="redirectToInventory()">Inventory</button>
+
+    </div>
+  </div>
+
+  <div class="content">
+    <header>
+      <h1>Login</h1>
+    </header>
+    <h2>Sign In</h2>
+    <div class="roleD">
+      <label for="role" id="roleLbl">Choose your role:</label>
+      <select id="role" name="role">
+        <option value="technician">Technician</option>
+        <option value="salesperson">Salesperson</option>
+        <option value="admin">Admin</option>
+      </select>
+    </div>
+    
+    <div id="loginInputs">
+      <div class="form-group">
+        
+        <label for="login" id="first">Login</label>
+        <input id='login' type="text" required>
+      </div>
+      <div class="form-group">
+        <label for="password" id="first">Password</label>
+        <input id='password' type="text" required>
+      </div>
+      <button id='signIn' onclick="redirectHome()">Sign In</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="../login/login.js"></script>
+</body>
+
+</html>

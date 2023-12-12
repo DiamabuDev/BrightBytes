@@ -1,0 +1,114 @@
+header {
+    height: 90px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 10px 10px;
+    background: #FAD85D;
+    align-items: center;
+    text-align: center;
+}
+
+header,
+h2,
+.btn-container,
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+}
+
+h1 {
+    margin: 0;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+h2 {
+    margin-top: 90px;
+    padding: 8px 0 30px 0;
+}
+
+main {
+    color: white;
+}
+
+main img {
+    height: 50px;
+    margin: 20px;
+}
+
+#img-btn-container {
+    margin-top: 20px;
+    margin-right: 1300px;
+}
+
+.btn-container{
+    margin-top: 20px;
+}
+
+.btn-customer-types,
+.btn-new-equipment {
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: #FAD85D;
+    cursor: pointer;
+    margin: 10px 35px;
+    border-radius: 15px;
+    width: 250px;
+}
+
+.data-table tbody tr:hover {
+    background-color: rgb(101, 101, 101);
+    cursor: pointer;
+}
+
+.data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 120px;
+}
+
+.data-inputs {
+    margin-top: 20px;
+}
+
+.data-inputs input,
+.data-inputs select {
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    width: 250px;
+    height: 35px;
+    padding: 2px 10px 2px 10px;
+    border: none;
+    margin-right: 20px;
+}
+
+.data-table th,
+.data-table td {
+    padding: 10px;
+    text-align: left;
+    margin-top: 80px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.data-table {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#paging {
+    display: flex;
+    align-self: center;
+    width: 251px;
+    height: 45px;
+}

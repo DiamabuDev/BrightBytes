@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="global.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <title>Home</title>
+</head>
+<body>
+
+<div class="sidebar" id="mySidebar">
+  <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+  <a href="index.html">Home</a> 
+  <a href="orders.html">Orders</a>
+  <a href="customers/customers.html">Customers</a>
+  <a href="../repairs/repairs.html">Repairs</a>
+  <a href="../reports/reports.html" tabindex="5">Reports</a>
+
+  <div class="sideButtons">
+    <button onclick="redirectHome()">Home</button>
+    <button onclick="redirectToOrders()">Orders</button>
+    <button onclick="redirectToCust()">Customers</button>
+    <button onclick="redirectToInventory()">Repairs</button>    
+</div>
+</div>
+
+<div class="content">
+  <header>
+    <h1>Home</h1>
+  </header>  
+    <h2>Quick Links</h2>
+    <div class="quick-links">
+      <div>
+        <button class="Qlinks" onclick="redirectToCust()">Customers</button>
+        <p class="button-description">Manage customer information</p>
+      </div>
+    
+      <div>
+        <button class="Qlinks" onclick="redirectToOrders()">Orders</button>
+        <p class="button-description">Manage/create new orders</p>
+      </div>
+    
+      <div>
+        <button class="Qlinks" onclick="ToAddCustomer()">New Customer</button>
+        <p class="button-description">Create a new Customer</p>
+      </div>
+    
+      <div>
+        <button class="Qlinks" onclick="GoBackToNewOrder()">New order</button>
+        <p class="button-description">Create a new Order</p>
+      </div>
+    </div>
+    <button class="Qlinks" onclick="GoToNewReport()">New Report</button>
+        <p class="button-description">Create a new Report</p>
+</div>  
+<script src="sidebar.js"></script>
+<script src="script.js"></script>
+<script src="global.js"></script>
+
+</body>
+</html>

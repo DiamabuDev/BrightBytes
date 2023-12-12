@@ -1,0 +1,234 @@
+header {
+    height: 90px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 10px 10px;
+    background: #FAD85D;
+    align-items: center;
+    text-align: center;
+}
+
+header,
+h2,
+#btn-container,
+.img-container, 
+#img-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+}
+
+button:focus {
+    outline: 3px solid rgb(253, 241, 67);  
+}
+
+h1 {
+    margin: 0;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+h2 {
+    margin: 10px 0px 0px 120px;
+    padding: 8px 0 20px 0;
+    font-size: 27px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+.first-row-info,
+.second-row-info,
+.third-row-info {
+    margin-left: 120px;
+    text-align: center;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+}
+
+/* Clear the float to prevent layout issues */
+.first-row-info::after,
+.second-row-info::after,
+.third-row-info::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.list-row {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+    margin-left: 150px;
+}
+
+.main-info div p {
+    margin: 0px 0px 0px 100px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.row-one {
+    height: 200px;
+}
+
+.row-two {
+    height: 150px;
+}
+
+#btn-save, #btn-finish {
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: #FAD85D;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 120px;
+    margin-top: 60px;
+}
+
+.btn-list {
+    width: 40px;
+    height: 25px;
+    margin-top: 25px;
+    margin-left: -30px;
+    background: #FAD85D;
+    border: none;
+    border-radius: 5px;
+}
+
+#btn-container {
+    gap: 420px;
+    margin-top: 60px;
+}
+
+#img-btn-container {
+    margin-top: -10px;
+    gap: 1150px;
+}
+
+main {
+    color: white;
+}
+
+main img {
+    height: 50px;
+    margin: 20px;
+}
+
+label {
+    display: block;
+    font-size: 22px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none; 
+    padding-left: 0; 
+    margin-left: 0; 
+    margin-top: -5px;
+}
+
+#status {
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 2px 10px 2px 10px;
+    border: none;
+    height: 50px;
+    width: 250px;
+}
+
+div.row-one > p.status {
+    color: lightblue;
+}
+
+#description {
+    justify-content: center;
+    text-align: center;
+    margin-left: -30px;
+}
+
+#work-done {
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 15px 10px 0px 15px;
+    height: 130px;
+    width: 360px;
+}
+
+#start-date, #end-date {
+    width: 230px;
+    height: 30px;
+    font-size: 17px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.list-one {
+    margin: 0px 0px 0px 0px;
+}
+
+.list-two {
+    margin: 0px 0px 0px 0px;
+}
+
+.selected {
+    color: #FAD85D;
+}
+
+.tooltip-inline {
+    display: grid;
+    grid-template-columns: 3fr 1fr;    
+    margin-right: -190px;
+}
+
+.tooltip-icon {
+    margin-left: 0px;
+}
+
+/*CSS for hint*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+  }
+  
+  .tooltiptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    left: 160%;
+    margin-left: -80px; /* Center the tooltip horizontally */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.accesibilty {
+    margin-top: 80px;
+}

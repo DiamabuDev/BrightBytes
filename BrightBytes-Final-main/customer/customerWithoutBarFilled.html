@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../customer/customer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <title>New Customer</title>
+</head>
+
+<body>
+    <header>
+        <h1>Customer</h1>
+    </header>
+    <nav class="sidebar" id="mySidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        <a href="../index.html">Home</a>
+        <a href="../orders.html">Orders</a>
+        <a href="../customers/customers.html">Customers</a>
+        <a href="../repairs/repairs.html">Repairs</a>
+        <a href="../reports/reports.html" tabindex="5">Reports</a>
+        <div class="sideButtons">
+            <button>Orders</button>
+            <button>Customers</button>
+            <button>Inventory</button>
+            <button>Sales</button>
+        </div>
+    </nav>
+    <main>
+        <h2>Edit Customer</h2>
+        <div class="form-container">
+            <form id="myForm">                
+                <div class="input-container">
+                    <input type="text" id="txtFirstName" placeholder=" " value='Freddie'>
+                    <label for="txtFirstName">First Name</label>
+                    <span id="errorTxtFirstName" class="error-message">! Please enter the First Name</span>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="txtLastName" placeholder=" " value='Mercury'>
+                    <label for="txtLastName">Last Name</label>
+                    <span id="errorTxtLastName" class="error-message">! Please enter the Last Name</span>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="txtPhone" placeholder=" " value="(234) 567-8960">
+                    <label for="txtPhone">Phone</label>
+                    <span id="errorTxtPhone" class="error-message">! Please enter the Phone</span>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="txtEmail" placeholder=" " value="fredqueen@gmail.com">
+                    <label for="txtEmail">Email</label>
+                    <span id="errorTxtEmail" class="error-message">! Please enter the Email</span>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="txtAddress" placeholder=" " value="322 Street">
+                    <label for="txtAddress">Address</label>
+                    <span id="errorTxtAddress" class="error-message">Please enter the Address</span>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="txtPostal" placeholder=" " value="L2H 1S2">
+                    <label for="txtPostal">Postal</label>
+                    <span id="errorTxtPostal" class="error-message">! Please enter the Postal Code</span>
+                </div>
+                <div>
+                    <select id="cities">
+                        <option value="Select">Select City</option>
+                        <option value="Toronto" selected>Toronto</option>
+                        <option value="Vancouver">Vancouver</option>
+                        <option value="Montreal">Montreal</option>
+                        <option value="Calgary">Calgary</option>
+                        <option value="Ottawa">Ottawa</option>
+                        <option value="Edmonton">Edmonton</option>
+                        <option value="Quebec">Quebec City</option>
+                        <option value="Winnipeg">Winnipeg</option>
+                        <option value="Halifax">Halifax</option>
+                        <option value="Victoria">Victoria</option>
+                        <option value="Regina">Regina</option>
+                        <option value="Saskatoon">Saskatoon</option>
+                        <option value="Kitchener">Kitchener</option>
+                        <option value="London">London</option>
+                        <option value="Hamilton">Hamilton</option>
+                        <option value="Stjohns">St. John's</option>
+                        <option value="moncton">Moncton</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sherbrooke">Sherbrooke</option>
+                        <option value="Kingston">Kingston</option>
+                    </select>
+                    <span id="errorCities" class="error-message">! Please select the City</span>
+                </div>
+                <div>
+                    <select id="province">
+                        <option value="Select">Select Province</option>
+                        <option value="Alberta">Alberta</option>
+                        <option value="British Columbia">British Columbia</option>
+                        <option value="Manitoba">Manitoba</option>
+                        <option value="New Brunswick">New Brunswick</option>
+                        <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                        <option value="Nova Scotia">Nova Scotia</option>
+                        <option value="Ontario" selected>Ontario</option>
+                        <option value="Prince Edward Island">Prince Edward Island</option>
+                        <option value="Quebec">Quebec</option>
+                        <option value="Saskatchewan">Saskatchewan</option>
+                    </select>
+                    <span id="errorProvince" class="error-message">! Please select the Province</span>
+                </div> 
+                <div class="btn-container">
+                    <button id="btn-save" type="submit">Save</button>
+                </div>               
+            </form>
+        </div>
+        <div class="bottom-images">
+            <div class="bottom-btn">
+                <img src="../img/yellow-back-button.png" alt="Back Button" class="bottom-image" id="back-image"
+                    onclick="goBack()">
+                <img src="../img/yellow-next-button.png" alt="Next Button" class="bottom-image" id="next-image"
+                    onclick="ToRecurringCust()">
+            </div>
+        </div>
+    </main>
+    <script src="../global.js"></script>
+    <script src="customerWithoutBarFilled.js"></script>
+    <script src="../sidebar.js"></script>
+</body>
+
+</html>

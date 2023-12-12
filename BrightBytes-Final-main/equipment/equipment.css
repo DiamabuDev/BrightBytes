@@ -1,0 +1,144 @@
+header {
+    height: 90px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 10px 10px;
+    background: #FAD85D;
+    align-items: center;
+    text-align: center;
+}
+
+header,
+h2,
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+}
+
+h1 {
+    margin: 0;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+h2 {
+    padding: 8px 0 30px 0;
+    margin: 20px 0 0 120px;
+}
+
+main {
+    color: white;
+}
+
+main img {
+    height: 50px;
+    margin: 20px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 130px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input, select {
+    height: 30px;     
+    width: 580px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;    
+    font-size: 16px;
+}
+
+select {
+    height: 50px;
+    width: 603px;
+    font-size: 17px;
+}
+
+#warranty {
+    margin-bottom: 20px;
+}
+
+#txtNotes {
+    height: 200px;
+}
+
+input[type="text"] {
+    padding: 10px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="text"]+label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    color: black;
+}
+
+input[type="text"]:focus+label,
+input[type="text"]:not(:placeholder-shown)+label {
+    top: -10px;
+    background: white;
+    padding: 5px 10px 0 10px;
+    border-radius: 1px;
+    font-size: smaller;
+    color: black;
+}
+
+.error-message {    
+    color: #FE8A7B;
+    font-weight: bold;
+    display: none;
+}
+
+/*Button Save*/
+
+#btn-save {
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #FAD85D;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;    
+    font-size: 18px;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+/*Back and Next Buttons*/
+
+.bottom-images {
+    margin-left: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1000px;
+}

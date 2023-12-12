@@ -1,0 +1,184 @@
+header {
+    height: 90px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 10px 10px;
+    background: #FAD85D;
+    align-items: center;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+}
+
+h1 {
+    margin: 0;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+main {
+    color: white;
+    display: flex;    
+    margin-left: 150px;
+}
+
+.column-display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1500px;
+    margin: 0;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input, select {
+    height: 30px;     
+    width: 470px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    font-size: 16px;
+}
+
+select {
+    height: 50px;
+    width: 490px;
+    font-size: 17px;
+}
+
+#province {
+    margin-top: 20px;
+}
+
+#warranty, #equipList {
+    margin-bottom: 20px;
+}
+
+#txtNotes {
+    height: 200px;
+    margin-bottom: 0;
+}
+
+#equipList {
+    background-color: rgba(250, 216, 93, 0.829);
+    border: none;
+}
+
+input[type="text"] {
+    padding: 10px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="text"]+label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    color: black;
+}
+
+input[type="text"]:focus+label,
+input[type="text"]:not(:placeholder-shown)+label {
+    top: -10px;
+    background: white;
+    padding: 5px 10px 0 10px;
+    border-radius: 1px;
+    font-size: smaller;
+    color: black;
+}
+
+.error-message {    
+    color: #FE8A7B;
+    display: none;
+}
+
+.message-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message {
+    margin: 10px 0;
+    color: lightgreen;
+    font-weight: bold;
+}
+
+/*Button Save*/
+
+#btn-save {
+    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #FAD85D;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;    
+    font-size: 18px;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.outside-btn-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#btn-continue {
+    width: 250px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #FAD85D;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;    
+    font-size: 18px;    
+    margin-left: 120px;
+    border-radius: 5px;
+}
+
+/*Back and Next Buttons*/
+
+.bottom-images {
+    margin-left: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1200px;
+}
+
+#next-image, #back-image {
+    height: 50px;
+    margin: 20px;
+}

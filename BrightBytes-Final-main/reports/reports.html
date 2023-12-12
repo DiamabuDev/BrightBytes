@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="../reports/reports.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <title>Customer Report</title>
+</head>
+
+<body>
+  <header>
+    <h1>Reports</h1>
+  </header>
+  <nav class="sidebar" id="mySidebar">
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+    <a href="../index.html" tabindex="1">Home</a>
+    <a href="../orders.html" tabindex="2">Orders</a>
+    <a href="../customers/customers.html" tabindex="3">Customers</a>
+    <a href="../repairs/repairs.html" tabindex="4">Repairs</a>
+    <a href="../reports/reports.html" tabindex="4">Reports</a>
+    <div class="sideButtons">
+      <button>Orders</button>
+      <button>Customers</button>
+      <button>Inventory</button>
+      <button>Sales</button>
+    </div>
+  </nav>
+  <main>
+    <h2 id="reportTitle">
+      Choose a report
+    </h2>
+    <form>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="reportTypes">Choose a Report:</label>
+          <select tabindex="5" id="reportTypes">
+            <option value="select" selected>Select</option>
+            <option value="customerReport">Customer Report</option>
+            <option value="warrantyReport">Warranty Report</option>
+            <option value="orderReport">Order Report</option>
+          </select>
+        </div>
+        <div id="dates" class="form-group">
+          <label for="dateFromFilter">Select Dates:</label>
+          <input type="text" name="datetimes" />
+        </div>
+        <div id="orderFilter" class="form-group">
+          <label for="orderType">Order Type</label>
+          <select tabindex="5" id="reportTypes">
+            <option value="all">All</option>
+            <option value="repair">Repair</option>
+            <option value="purchase">Purchase</option>
+          </select>
+        </div>
+        <div id="manufacturerFilter" class="form-group">
+          <label for="orderType">Manufacturer</label>
+          <select tabindex="5" id="reportTypes">
+            <option value="all">All</option>
+            <option value="repair">Monsters Inc</option>
+            <option value="purchase">Walmart</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button id="btn_generate" class="btn">Generate Report</button>
+        </div>
+      </div>
+    </form>
+    <br><br>
+    <div id="customer_report">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Creation Date</th>
+            <th>Start Date</th>          
+            <th>End Date</th>
+            <th>Report Name</th>
+            <th>Order Type</th>
+            <th>Warranty</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr tabindex="9">
+            <td>11-10-2023</td>
+            <td>01-01-2022</td>
+            <td>31-12-2022</td>
+            <td>Customer Report</td>
+            <td>Repair</td>
+            <td>Yes</td>
+            <td tabindex="10"><a href="../generatedReport/generatedReportCustomer.html">Print</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="warranty_report">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Creation Date</th>
+            <th>Start Date</th>          
+            <th>End Date</th>
+            <th>Report Name</th>
+            <th>Manufacturer</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr tabindex="9">
+            <td>11-10-2023</td>
+            <td>01-01-2022</td>
+            <td>31-12-2022</td>
+            <td>Warranty Report</td>
+            <td>All</td>
+            <td tabindex="10"><a href="../generatedReport/generatedReportWarranty.html">Print</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="order_report">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Creation Date</th>
+            <th>Start Date</th>          
+            <th>End Date</th>
+            <th>Report Name</th>
+            <th>Total Revenue</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr tabindex="9">
+            <td>11-10-2023</td>
+            <td>01-01-2022</td>
+            <td>31-12-2022</td>
+            <td>Orders Report</td>
+            <td>$1000 CAD</td>
+            <td tabindex="10"><a href="../generatedReport/generatedReport.html">Print</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    </div>
+  </main>
+  <script src="reports.js"></script>
+  <script src="../global.js"></script>
+  <script src="../sidebar.js"></script>
+</body>
+
+</html>

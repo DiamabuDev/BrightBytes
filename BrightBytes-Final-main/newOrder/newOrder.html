@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="newOrder.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <title>Customer</title>
+</head>
+<body>
+    <header>
+        <h1>Customer</h1>
+    </header>
+    <nav class="sidebar" id="mySidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        <a href="../index.html" tabindex="1">Home</a>
+        <a href="../orders.html" tabindex="2">Orders</a>
+        <a href="../customers/customers.html" tabindex="3">Customers</a>
+        <a href="../repairs/repairs.html" tabindex="4">Repairs</a>
+        <a href="../reports/reports.html" tabindex="5">Reports</a>
+        <div class="sideButtons">
+            <button>Orders</button>
+            <button>Customers</button>
+            <button>Inventory</button>
+            <button>Sales</button>
+        </div>
+    </nav>
+    <main>
+        <div class="img-container">
+            <img src="../img/progress-bar-customer.png" alt="Progress Bar One">
+        </div>
+        <h2>Select the customer</h2>
+        <div class="btn-container">
+            <button tabindex="5" class="btn-customer-types" onclick="ToNewCustomer()">New Customer</button>
+            <button tabindex="6" class="btn-customer-types" onclick="ToRecurringCust()">Recurring Customer</button>
+        </div>
+        <div id="img-btn-container">
+            <img tabindex="7" src="../img/back-button.png" alt="Back Button" onclick="goBack()">
+        </div>      
+    </main>
+    <script src="../global.js"></script>
+    <script src="../newEquipment/newequipment.js"></script>
+    <script src="../sidebar.js"></script>
+</body>
+</html>

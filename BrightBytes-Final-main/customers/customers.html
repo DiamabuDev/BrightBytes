@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../customers/customers.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <title>Customer</title>
+</head>
+<body>
+    <header>
+        <h1>Customer</h1>
+    </header>
+    <nav class="sidebar" id="mySidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        <a href="../index.html" tabindex="1">Home</a>
+        <a href="../orders.html" tabindex="2">Orders</a>
+        <a href="../customers/customers.html" tabindex="3">Customers</a>
+        <a href="../repairs/repairs.html" tabindex="4">Repairs</a>
+        <a href="../reports/reports.html" tabindex="5">Reports</a>
+        <div class="sideButtons">
+            <button>Orders</button>
+            <button>Customers</button>
+            <button>Inventory</button>
+            <button>Sales</button>
+        </div>
+    </nav>
+    <main>
+        <div class="btn-container">
+            <button tabindex="5" class="btn-customer-types" onclick="ToAddCustomer()">New Customer</button>
+        </div>
+        <div class="data-container">
+            <div class="data-inputs">
+                <input tabindex="6"type="text" placeholder="Search by Name" id="nameFilter">
+                <input tabindex="7"type="email" placeholder="Search by Email" id="emailFilter">
+                <input tabindex="8"type="tel" placeholder="Search by Phone" id="phoneFilter">
+                <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Full Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Edit Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr tabindex="9">
+                        <td >Freddie Mercury</td>
+                        <td >(234) 567-8960</td>
+                        <td >fredqueen@gmail.com</td>
+                        <td tabindex="11"><a href="../combineEditCust&Equip/editCust&Equip.html">Edit</a></td>
+                      </tr>
+                      <tr tabindex="12">
+                        <td>Brad Pitt</td>
+                        <td>(986) 345-9876</td>
+                        <td>pittyobrad@gmail.com</td>
+                        <td tabindex="14"><a href="../combineEditCust&Equip/editCust&Equip.html">Edit</a></td>
+                      </tr>
+                      <tr tabindex="15">
+                        <td>Rachel McAdams</td>
+                        <td>(789) 346-3468</td>
+                        <td>meangurl@gmail.com</td>
+                        <td tabindex="17"><a href="../combineEditCust&Equip/editCust&Equip.html">Edit</a></td>
+                      </tr>
+                      <tr tabindex="18">
+                        <td>Malala Yousafzai</td>
+                        <td>(345) 273-0987</td>
+                        <td>studynow@gmail.com</td>
+                        <td tabindex="20"><a href="../combineEditCust&Equip/editCust&Equip.html">Edit</a></td>
+                      </tr>
+                      <tr tabindex="21">
+                        <td>Robert Downey Jr</td>
+                        <td>(546) 364-9164</td>
+                        <td>ironman@gmail.com</td>
+                        <td tabindex="23"><a href="../combineEditCust&Equip/editCust&Equip.html">Edit</a></td>
+                      </tr>
+                      <tr tabindex="24">
+                        <td>Daddy Yankee</td>
+                        <td>(374) 284-5894</td>
+                        <td>quiereme@gmail.com</td>
+                        <td tabindex="26"><a href="../combineEditCust&Equip/editCust&Equip.html">Edit</a></td>
+                      </tr>
+                </tbody>
+              </table>
+        </div>
+        <div id="paging">
+          <img tabindex="27" src="../img/paging.png" alt="Paging">
+        </div>  
+    </main>    
+    <script src="../customers/customers.js"></script>
+    <script src="../global.js"></script>
+    <script src="../sidebar.js"></script>
+</body>
+</html>
