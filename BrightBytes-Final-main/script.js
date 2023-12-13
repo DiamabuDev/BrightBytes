@@ -3,20 +3,20 @@ function toggleSidebar() {
   sidebar.classList.toggle('sidebar-expanded');
 }
 function redirectToOrders() {
-  window.location.href = '../orders.html';
+  window.location.href = 'orders.html';
 }
 function newOrderClick() {
-  window.location.href = '../newOrder/newOrder.html';
+  window.location.href = 'newOrder/newOrder.html';
 }
 function recurringCustClick() {
-  window.location.href = '../cust&equip/recurringCust.html';
+  window.location.href = 'cust&equip/recurringCust.html';
 }
 function redirectHome(){
-  window.location.href = '../index.html';
+  window.location.href = 'index.html';
 }
 
 function redirectToCust(){
-  window.location.href = "../customers/customers.html"
+  window.location.href = "customers/customers.html"
 }
 
 function redirectToInventory(){
@@ -83,6 +83,10 @@ function ToOrderOnClick() {
 
 function OrderWoutEquipOnClick() {
   window.location.href = '../orderWoutEquip/orderWoutEquip.html';
+}
+
+function AddCustomer() {
+  window.location.href = '../customer/customerWithoutBar.html';
 }
 
 document.addEventListener('DOMContentLoaded', function () {
