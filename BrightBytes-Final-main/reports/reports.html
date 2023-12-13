@@ -96,13 +96,9 @@
           <label>To:</label>
           <input type="date" id="inputTo" name="datetimes">
         </div>        
-        <div id="orderFilter" class="form-group">
-          <label>Order Type</label>
-          <select tabindex="5" id="orderTypes">
-            <option value="all">All</option>
-            <option value="repair">Repair</option>
-            <option value="purchase">Purchase</option>
-          </select>
+        <div id="nameFilter" class="form-group">
+          <label>Search by Customer</label>
+          <input tabindex="6" type="text" placeholder="Search by Name">
         </div>
         <div id="manufacturerFilter" class="form-group">
           <label>Manufacturer</label>
@@ -123,8 +119,8 @@
             <th>Start Date</th>
             <th>End Date</th>
             <th>Report Name</th>
-            <th>Order Type</th>
-            <th>Warranty</th>
+            <th>Customer Name</th>
+            <th>Order Type</th>            
             <th></th>
           </tr>
         </thead>
@@ -134,8 +130,8 @@
             <td>01-01-2022</td>
             <td>31-12-2022</td>
             <td>Customer Report</td>
-            <td>Repair</td>
-            <td>Yes</td>
+            <td>Freddy Mercury</td>
+            <td>Repair</td>            
             <td tabindex="10"><a href="../generatedReport/generatedReportCustomer.html">Print</a></td>
           </tr>
         </tbody>

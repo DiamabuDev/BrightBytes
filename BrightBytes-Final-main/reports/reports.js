@@ -1,5 +1,5 @@
 
-var orderFilterDiv = document.getElementById('orderFilter');
+var nameFilterDiv = document.getElementById('nameFilter');
 var manufacturerFilterDiv = document.getElementById('manufacturerFilter');
 var customerDiv = document.getElementById('customer_report');
 var warrantyDiv = document.getElementById('warranty_report');
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var generateBtn = document.getElementById('btn_generate');
 
-  orderFilterDiv.style.display = 'none';
+  nameFilterDiv.style.display = 'none';
   manufacturerFilterDiv.style.display = 'none';
   customerDiv.style.display = 'none';
   warrantyDiv.style.display = 'none';
@@ -48,7 +48,7 @@ function handleReportChange(selectedReport) {
   switch (selectedReport) {
     case 'select':
       // Logic for Customer Report
-      orderFilterDiv.style.display = 'none';
+      nameFilterDiv.style.display = 'none';
       dateDiv.style.display = 'none';
       dateFromDiv.style.display = 'none';
       btnGenerate.style.display = 'none';
@@ -57,7 +57,7 @@ function handleReportChange(selectedReport) {
       break;
     case 'customerReport':
       // Logic for Customer Report
-      orderFilterDiv.style.display = 'flex';
+      nameFilterDiv.style.display = 'flex';
       dateDiv.style.display = 'flex';
       dateFromDiv.style.display = 'flex';
       btnGenerate.style.display = 'flex';
@@ -66,7 +66,7 @@ function handleReportChange(selectedReport) {
       break;
     case 'warrantyReport':
       // Logic for Warranty Report
-      orderFilterDiv.style.display = 'none';
+      nameFilterDiv.style.display = 'none';
       manufacturerFilterDiv.style.display = 'flex';
       dateDiv.style.display = 'flex';
       dateFromDiv.style.display = 'flex';
@@ -75,7 +75,7 @@ function handleReportChange(selectedReport) {
       break;
     case 'orderReport':
       // Logic for Order Report
-      orderFilterDiv.style.display = 'flex';
+      nameFilterDiv.style.display = 'flex';
       manufacturerFilterDiv.style.display = 'none';
       dateDiv.style.display = 'flex';
       dateFromDiv.style.display = 'flex';
