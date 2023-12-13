@@ -3,6 +3,9 @@ header {
     flex-shrink: 0;
     border-radius: 0px 0px 10px 10px;
     background: #FAD85D;
+    /* align-items: center;
+    text-align: center; */
+    
 }
 
 body{
@@ -11,6 +14,8 @@ body{
 
 header{
     display: flex;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .section-row {
@@ -24,12 +29,12 @@ h2 {
     margin: 0; 
     color: #000;
     font-family: Poppins;
-    font-size: 35px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
     letter-spacing: 1.5px;
-    margin-left: 50px;
+    margin-left: 120px;
 }
 
 h3 {
@@ -37,7 +42,7 @@ h3 {
     font-size: 18px; 
     color: #000;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -50,7 +55,7 @@ h3 {
     margin: 0px 240px;
     color: #000;
     font-family: Poppins;
-    font-size: 30px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -72,13 +77,13 @@ h5{
     font-weight: 500;
     line-height: normal;
     letter-spacing: 1.05px;
-    margin-top: 80px;
+    margin-top: 150px;
 }
 
 .new-orders-reports{
     color: #000;
     font-family: Poppins;
-    font-size: 30px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -86,10 +91,12 @@ h5{
     margin-left: 120px;
 }
 
+/* h2, */
 .img-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;/* 
+    margin-left: 120px; */
 }
 
 h1 {
@@ -98,6 +105,11 @@ h1 {
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 1.2px;
+}
+
+h2 {
+    margin-top: 90px;
+    
 }
 
 main {
@@ -109,13 +121,16 @@ a {
     color: aliceblue;
 }
 
+
 .data-container {
     display: flex;
     flex-direction: column;
-    align-items: left;
     justify-content: left;
     margin: -40px 270px;
 }
+
+
+
 
 .data-table th,
 .data-table td {
@@ -132,6 +147,8 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+
+
 
 .cust-info {
     margin-left: 270px;
