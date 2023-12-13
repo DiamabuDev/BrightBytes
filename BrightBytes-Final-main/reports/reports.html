@@ -9,9 +9,52 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      var availableTags = [
+        "All",
+        "Joey Mama Enterprise",
+        "Live Corp.",
+        "The Green Industries",
+        "Monsters Inc.",
+        "Gamma Gia Co.",
+        "Wall-E Inc.",
+        "Scheme",
+      ];
+      $("#tags").autocomplete({
+        source: availableTags,
+      });
+
+      $("#tags")
+        .autocomplete({
+          source: availableTags,
+          minLength: 0,
+        })
+        .focus(function () {
+          $(this).autocomplete("search", "");
+        });
+    });
+  </script>
+  <script>
+    window.onload = function() {
+      // Set the default From date as January 1, 2023
+      document.getElementById('inputFrom').value = '2023-01-01';
+  
+      // Set the default To date as the current date
+      var today = new Date();
+      var dd = String(today.getDate()).padStart(2, '0');
+      var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+      var yyyy = today.getFullYear();
+      today = yyyy + '-' + mm + '-' + dd;
+      document.getElementById('inputTo').value = today;
+    };
+  </script>  
   <title>Customer Report</title>
 </head>
-
 <body>
   <header>
     <h1>Reports</h1>
@@ -45,16 +88,16 @@
             <option value="orderReport">Order Report</option>
           </select>
         </div>
-        <div id="dateTo" class="form-group">
-          <label for="dateFrom">From:</label>
-          <input type="date" name="datetimes" />
-        </div>
         <div id="dateFrom" class="form-group">
-          <label for="dateTo">To:</label>
-          <input type="date" name="datetimes" />
-      </div>
+          <label>From:</label>
+          <input type="date" id="inputFrom" name="datetimes">
+        </div>
+        <div id="dateTo" class="form-group">
+          <label>To:</label>
+          <input type="date" id="inputTo" name="datetimes">
+        </div>        
         <div id="orderFilter" class="form-group">
-          <label for="orderType">Order Type</label>
+          <label>Order Type</label>
           <select tabindex="5" id="orderTypes">
             <option value="all">All</option>
             <option value="repair">Repair</option>
@@ -62,12 +105,8 @@
           </select>
         </div>
         <div id="manufacturerFilter" class="form-group">
-          <label for="manufacturerType">Manufacturer</label>
-          <select tabindex="5" id="manufacturerTypes">
-            <option value="all">All</option>
-            <option value="monsters">Monsters Inc</option>
-            <option value="walmart">Walmart</option>
-          </select>
+          <label>Manufacturer</label>
+          <input id="tags">
         </div>
         <div class="form-group">
           <button id="btn_generate" class="btn">Generate Report</button>
@@ -80,7 +119,7 @@
         <thead>
           <tr>
             <th>Creation Date</th>
-            <th>Start Date</th>          
+            <th>Start Date</th>
             <th>End Date</th>
             <th>Report Name</th>
             <th>Order Type</th>
@@ -106,7 +145,7 @@
         <thead>
           <tr>
             <th>Creation Date</th>
-            <th>Start Date</th>          
+            <th>Start Date</th>
             <th>End Date</th>
             <th>Report Name</th>
             <th>Manufacturer</th>
@@ -130,7 +169,7 @@
         <thead>
           <tr>
             <th>Creation Date</th>
-            <th>Start Date</th>          
+            <th>Start Date</th>
             <th>End Date</th>
             <th>Report Name</th>
             <th>Total Revenue</th>
@@ -148,8 +187,6 @@
           </tr>
         </tbody>
       </table>
-    </div>
-    
     </div>
   </main>
   <script src="reports.js"></script>
